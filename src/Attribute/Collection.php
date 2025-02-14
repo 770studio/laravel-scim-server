@@ -34,7 +34,7 @@ class Collection extends AbstractComplex
     {
         $result = [];
 
-        foreach ($object->{$this->attribute} as $o) {
+        foreach ((array)$object->{$this->attribute} as $o) {
             $element = [];
 
             foreach ($this->subAttributes as $attribute) {
